@@ -18,7 +18,7 @@ Restart your terminal after installation if necessary.
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/laheckerr/usaco-cli
 cd usaco-cli
 ```
 
