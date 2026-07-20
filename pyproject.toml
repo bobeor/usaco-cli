@@ -1,0 +1,23 @@
+[project]
+name = "usaco-cli"
+version = "1.0.0"
+description = "CLI tool for submit to usaco.org"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4==4.15.0",
+    "certifi==2026.6.17",
+    "charset-normalizer==3.4.9",
+    "dotenv==0.9.9",
+    "idna==3.18",
+    "python-dotenv==1.2.2",
+    "requests==2.34.2",
+    "setuptools==83.0.0",
+    "simple-term-menu==1.6.6",
+    "soupsieve==2.9",
+    "typing-extensions==4.16.0",
+    "urllib3==2.7.0",
+]
+
+[project.scripts]
+usaco-cli = "usaco_cli.main:main"
