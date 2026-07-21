@@ -1,5 +1,3 @@
-from pyexpat import ErrorString
-
 import requests as rq
 import argparse
 import json
@@ -188,10 +186,10 @@ def get_results(txt: str):
     total = 0
     for i, link in enumerate(soup.find_all("a")):
         if "correct" in str(link["title"]).lower():
-            print(f"{Color.GREEN} {i} {Color.RESET}")
+            print(f"{Color.GREEN} {i+1}) {link['title']} {Color.RESET}")
             correct += 1
         else:
-            print(f"{Color.RED} {i}{Color.RESET}")
+            print(f"{Color.RED}{i}) {link['title']}{Color.RESET}")
         total += 1
 
     if total // 2 >= correct:
