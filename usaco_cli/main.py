@@ -192,7 +192,7 @@ def get_results(txt: str):
             print(f"{Color.RED}{i}) {link['title']}{Color.RESET}")
         total += 1
 
-    if total // 2 >= correct:
+    if total  != correct:
         print(f"{Color.RED}TOTAL: {correct}/{total}{Color.RESET}")
     else:
         print(f"{Color.GREEN}TOTAL: {correct}/{total}{Color.RESET}")
