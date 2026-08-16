@@ -16,3 +16,8 @@ wheels/
 
 #AI Agents
 AGENTS.md
+
+# MISC 
+.uv-bin/
+.uv-cache/
+.uv-tools/
