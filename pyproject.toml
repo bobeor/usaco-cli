@@ -8,7 +8,6 @@ dependencies = [
     "beautifulsoup4==4.15.0",
     "certifi==2026.6.17",
     "charset-normalizer==3.4.9",
-    "dotenv==0.9.9",
     "idna==3.18",
     "python-dotenv==1.2.2",
     "requests==2.34.2",
@@ -21,3 +20,8 @@ dependencies = [
 
 [project.scripts]
 usaco-cli = "usaco_cli.main:main"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.3",
+]
