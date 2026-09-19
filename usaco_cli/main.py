@@ -81,7 +81,7 @@ def create_config_file():
         selected = selected[0]
     language = menu_options[selected]
     
-    #does filename = problem id? defaults to no
+    #does filename = problem id?
     menu_options = ["No", "Yes"]
     tm = TerminalMenu(menu_options, title="Toggle filename = problem id")
     tg = tm.show()
@@ -294,11 +294,11 @@ def main():
     else:
         lang = creds["language"]
 
-    if not cpid and creds["id=file"].lower() == "no":
+    if not cpid and creds["id=file"] == 0:
         print("Please include a cpid as id = file set to false")
         sys.exit(1)
         
-    if creds["id=file"].lower() == "yes":
+    if creds["id=file"] == 1:
         cpid = Path(filepath).stem
 
     # Authenticate on usaco.org
